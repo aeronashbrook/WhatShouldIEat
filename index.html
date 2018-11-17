@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNrl5Q5pMMYeQdFRM_QI3GkEvfNS0l6f4&libraries=places" async defer></script>
+    <script type="text/javascript" src="assets/app.js"></script>
+    <title>What Should I Eat?</title>
+</head>
+<body>
+    
+    <div class="jumbotron" id="startPage">
+        <h1 class="display-4 text-center text-white" id="titlePage1">What Should I Eat?</h1>
+        <div class="text-center">
+            <button class="btn btn-light btn-lg text-center text-black" id="getStarted" >Get Started</button>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="InOutPage">
+        <h2 class="display-4 text-center text-white" id="headingPage2">Are you looking to..</h2>
+        <div class="col d-flex justify-content-center" id="divPage2">
+            <button class="btn btn-light btn-lg text-center" id="DineInButton">
+                <div class="card-body">
+                    <br><h3 class="card-title">Dine In</h3>
+                    <img id="cookimgPage2" src="assets/cooking.png" alt="cooking" width="100" height="100"><br><br> 
+                    <h4 class="card-subtitle mb-2 text-muted">Prepare a meal</h4>
+                </div>
+            </button>
+            <button class="btn btn-light btn-lg text-center" id="EatOutButton">
+                <div class="card-body">
+                    <br><h3 class="card-title">Eat Out</h3>
+                    <img id="dishimgPage2" src="assets/dish.png" alt="cooking" width="100" height="100"><br><br>
+                    <h4 class="card-subtitle mb-2 text-muted">Find a restaurant</h4>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="MealTypePage1">
+            <h2 class="display-4 text-center text-white" id="headingPage3">Would you like..</h2><br><br>
+            <div class="col d-flex justify-content-center" id="divPage3">
+                <button class="btn btn-light btn-lg text-center" id="BreakfastButton1">
+                    <div class="card-body">
+                        <br><h3 class="card-title">Breakfast</h3>
+                        <img id="cookimgPage2" src="assets/breakfast.png" alt="breakfast" width="100" height="100"><br><br> 
+                    </div>
+                </button>
+                <button class="btn btn-light btn-lg text-center" id="DinnerButton1">
+                    <div class="card-body">
+                        <br><h3 class="card-title">Lunch/Dinner</h3>
+                        <img id="dishimgPage2" src="assets/dish.png" alt="cooking" width="100" height="100"><br><br>
+                    </div>
+                </button>
+                <button class="btn btn-light btn-lg text-center" id="DessertButton1">
+                    <div class="card-body">
+                        <br><h3 class="card-title">Dessert</h3>
+                        <img id="dishimgPage2" src="assets/dessert.png" alt="dessert" width="100" height="100"><br><br>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="jumbotron" id="MealTypePage2">
+                <h2 class="display-4 text-center text-white" id="headingPage3">Would you like..</h2><br><br>
+                <div class="col d-flex justify-content-center" id="divPage3">
+                    <button class="btn btn-light btn-lg text-center" id="BreakfastButton2">
+                        <div class="card-body">
+                            <br><h3 class="card-title">Breakfast</h3>
+                            <img id="cookimgPage2" src="assets/breakfast.png" alt="breakfast" width="100" height="100"><br><br> 
+                        </div>
+                    </button>
+                    <button class="btn btn-light btn-lg text-center" id="DinnerButton2">
+                        <div class="card-body">
+                            <br><h3 class="card-title">Lunch/Dinner</h3>
+                            <img id="dishimgPage2" src="assets/dish.png" alt="cooking" width="100" height="100"><br><br>
+                        </div>
+                    </button>
+                    <button class="btn btn-light btn-lg text-center" id="DessertButton2">
+                        <div class="card-body">
+                            <br><h3 class="card-title">Dessert</h3>
+                            <img id="dishimgPage2" src="assets/dessert.png" alt="dessert" width="100" height="100"><br><br>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+
+
+    <div class="jumbotron" id="CuisinePage1">
+            <h1 class="display-4 text-center text-white">Cuisine Type</h1><br>
+        <div class="col d-flex justify-content-center">
+            <button type="button" id="AmericanButton1" class="btn btn-light text-black cuisineclass">American</button>
+            <br>
+            <button type="button" id="ChineseButton1" class="btn btn-light text-black cuisineclass">Chinese</button>
+            <br>
+            <button type="button" id="MexicanButton1" class="btn btn-light text-black cuisineclass">Mexican</button>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <button type="button" id="ItalianButton1" class="btn btn-light text-black cuisineclass">Italian</button>
+            <br>
+            <button type="button" id="IndianButton1" class="btn btn-light text-black cuisineclass">Indian</button>
+            <br>
+            <button type="button" id="MediterraneanButton1" class="btn btn-light text-black cuisineclass">Mediterranean</button>
+        </div>
+    </div>
+
+        <div class="jumbotron" id="CuisinePage2">
+            <h1 class="display-4 text-center text-white">Cuisine Type</h1><br>
+            <div class="col d-flex justify-content-center">
+                <button type="button" id="AmericanButton2" class="btn btn-light text-black cuisineclass">American</button>
+                <br>
+                <button type="button" id="ChineseButton2" class="btn btn-light text-black cuisineclass">Chinese</button>
+                <br>
+                <button type="button" id="MexicanButton2" class="btn btn-light text-black cuisineclass">Mexican</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button type="button" id="ItalianButton2" class="btn btn-light text-black cuisineclass">Italian</button>
+                <br>
+                <button type="button" id="IndianButton2" class="btn btn-light text-black cuisineclass">Indian</button>
+                <br>
+                <button type="button" id="MediterraneanButton2" class="btn btn-light text-black cuisineclass">Mediterranean</button>
+            </div>              
+        </div>
+
+    <div class="jumbotron" id="TimePage">
+        <h2 class="display-4 text-center text-white" id="headingPage4">Prep time </h2><br><br><br>
+        <div class="col d-flex justify-content-center" id="divPage4">
+            <button class="btn btn-light btn-lg text-center timeclass" id="U30Button">
+                <div class="card-body">
+                    <h3 class="card-title">under 30</h3>
+                    <h3>minutes</h3>
+                </div>
+            </button>
+            <button class="btn btn-light btn-lg text-center timeclass" id="U60Button">
+                <div class="card-body">
+                    <h3 class="card-title">under 60</h3>
+                    <h3>minutes</h3>  
+                </div>
+            </button>
+            <button class="btn btn-light btn-lg text-center timeclass" id="U90Button">
+                <div class="card-body">
+                    <h3 class="card-title">under 90</h3>
+                    <h3>minutes</h3>
+                </div>
+            </button>
+            <button class="btn btn-light btn-lg text-center timeclass" id="noLimitButton">
+                <div class="card-body">
+                    <h3 class="card-title">No time limit</h3> 
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div class="jumbotron" id="LocationPage">
+        <form>
+            <div class="col d-flex justify-content-center" id="zipDiv">
+                <div class="form-group">
+                    <label for="zipCode" class="display-4 text-white">Enter Zip Code</label>
+                    <input type="text" class="form-control" id="zipCode">
+                    <p class="col d-flex justify-content-center" id="zipValidate"></p>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button type="submit" id="LocationSubmitButton" class="btn btn-light text-black">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="jumbotron" id="resultsPage">
+        <p class="display-4 text-center text-white" id="counterResults"></p>
+        <table class="table table-striped table-hover" id="resultsTable">
+            <thead>
+                <tr>
+                <th>Recipe Image</th>
+                <th>Recipe Name</th>
+                <th>Recipe Link</th>
+                </tr>
+            </thead>
+            <tbody id="recipeEntry"></tbody>
+        </table>
+    </div>
+
+    <div class="jumbotron" id="MapPage">
+            <h2 class="display-4 text-center text-white" id="MapPageText"></h2>
+        <div id="map"></div>
+        <p class="display-4 text-center text-white" id="mapResults"></p>
+    </div>
+</body>
+</html>

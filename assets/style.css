@@ -1,0 +1,166 @@
+ 
+.jumbotron {
+    background-image: url(http://www.amifood.be/wp-content/uploads/2017/04/image-6.jpg); 
+    background-size: cover;
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+#titlePage1 {
+    margin-top: 10%;
+    margin-bottom: 6%;
+    font-size: 84px;
+}
+#getStarted {
+    margin-top: 10%;
+}
+
+#headingPage2 {
+margin-bottom: 5%;
+}
+#divPage2 {
+    height: 400px;
+}
+#DineInButton {
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    height: 82%;
+    width: 260px;
+}
+#cookimgPage2 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+#dishimgPage2 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#EatOutButton {
+    text-align: center;
+    float: left;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 2%;
+    height: 82%;
+    width: 260px;
+}
+
+
+#BreakfastButton1 {
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    height: 82%;
+    width: 260px;
+}
+#DinnerButton1 {
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    height: 82%;
+    width: 260px;
+}
+#DessertButton1 {
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    height: 82%;
+    width: 260px;
+}
+
+#BreakfastButton2 {
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    height: 82%;
+    width: 260px;
+}
+#DinnerButton2 {
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    height: 82%;
+    width: 260px;
+}
+#DessertButton2 {
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    height: 82%;
+    width: 260px;
+}
+
+.cuisineclass {
+    width: 200px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 180px;
+}
+
+#divPage4 {
+    height: 400px;
+}
+
+.timeclass {
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    height: 50%;
+    width: 260px;
+}
+#zipCode {
+    width: 80%;
+    margin: auto;
+}
+#zipDiv{
+    margin-top: 12%;
+}
+
+#resultsTable {
+    background-color: white;
+}
+
+#resultsPage {
+overflow: auto;
+max-height: 600px;
+}
+
+#map {
+    height: 92%;
+}
+  
+#mapResults {
+    font-size: 18px;
+}
+
+#counterResults {
+    font-size: 18px;
+}
+
+#zipValidate{
+    color: red;
+}
