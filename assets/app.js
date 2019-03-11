@@ -73,10 +73,10 @@ $(document).ready(function(){
                     cuisineInput1 = "Indian Dinner"
                 }); 
 
-                $("#MediterraneanButton1").on("click", function() {
+                $("#VeganButton1").on("click", function() {
                     $("#CuisinePage1").hide();
                     $("#TimePage").show();
-                    cuisineInput1 = "Mediterranean Dinner"
+                    cuisineInput1 = "Vegan Dinner"
                 }); 
 
             $("#DessertButton1").on("click", function() {
@@ -177,10 +177,10 @@ $(document).ready(function(){
                     cuisineInput2 = 'Indian';
                 }); 
 
-                $("#MediterraneanButton2").on("click", function() {
+                $("#VeganButton2").on("click", function() {
                     $("#CuisinePage2").hide();
                     $("#LocationPage").show();
-                    cuisineInput2 = "Mediterranean";
+                    cuisineInput2 = "Vegan";
                 }); 
 
             $("#DessertButton2").on("click", function() {

@@ -25,133 +25,110 @@
         <h2 class="display-4 text-center text-white" id="headingPage2">Are you looking to..</h2>
         <div class="col d-flex justify-content-center" id="divPage2">
             <button class="btn btn-light btn-lg text-center" id="DineInButton">
-                <div class="card-body">
-                    <br><h3 class="card-title">Dine In</h3>
-                    <img id="cookimgPage2" src="assets/cooking.png" alt="cooking" width="100" height="100"><br><br> 
-                    <h4 class="card-subtitle mb-2 text-muted">Prepare a meal</h4>
-                </div>
+                    <h3 class="card-title p2title">Dine In</h3>
+                    <img class="inoutImg" id="cookimgPage2" src="assets/cooking.png" alt="cooking" width="100" height="100">
+                    <h4 class="card-subtitle mb-2 text-muted p2info">Prepare a meal</h4>
             </button>
             <button class="btn btn-light btn-lg text-center" id="EatOutButton">
-                <div class="card-body">
-                    <br><h3 class="card-title">Eat Out</h3>
-                    <img id="dishimgPage2" src="assets/dish.png" alt="cooking" width="100" height="100"><br><br>
-                    <h4 class="card-subtitle mb-2 text-muted">Find a restaurant</h4>
-                </div>
+                    <h3 class="card-title p2title" id="eatOutText">Eat Out</h3>
+                    <img class="inoutImg" id="dishimgPage2" src="assets/dish.png" alt="cooking" width="100" height="100">
+                    <h4 class="card-subtitle mb-2 text-muted p2info">Find a restaurant</h4>
             </button>
         </div>
     </div>
 
     <div class="jumbotron" id="MealTypePage1">
-            <h2 class="display-4 text-center text-white" id="headingPage3">Would you like..</h2><br><br>
-            <div class="col d-flex justify-content-center" id="divPage3">
-                <button class="btn btn-light btn-lg text-center" id="BreakfastButton1">
-                    <div class="card-body">
-                        <br><h3 class="card-title">Breakfast</h3>
-                        <img id="cookimgPage2" src="assets/breakfast.png" alt="breakfast" width="100" height="100"><br><br> 
-                    </div>
-                </button>
-                <button class="btn btn-light btn-lg text-center" id="DinnerButton1">
-                    <div class="card-body">
-                        <br><h3 class="card-title">Lunch/Dinner</h3>
-                        <img id="dishimgPage2" src="assets/dish.png" alt="cooking" width="100" height="100"><br><br>
-                    </div>
-                </button>
-                <button class="btn btn-light btn-lg text-center" id="DessertButton1">
-                    <div class="card-body">
-                        <br><h3 class="card-title">Dessert</h3>
-                        <img id="dishimgPage2" src="assets/dessert.png" alt="dessert" width="100" height="100"><br><br>
-                    </div>
-                </button>
-            </div>
+        <h2 class="display-4 text-center text-white" id="headingPage3">Would you like..</h2>
+        <div class="col d-flex justify-content-center" id="divMTP1">
+            <button class="btn btn-light btn-lg text-center mealType" id="BreakfastButton1">
+                    <h3 class="card-title mealTypeText">Breakfast</h3>
+                    <img class="mealtypeimg" class="mealtypeimg"  src="assets/breakfast.png" alt="breakfast" width="100" height="100">
+            </button>
+            <button class="btn btn-light btn-lg text-center mealType" id="DinnerButton1">
+                    <h3 class="card-title mealTypeText">Dinner</h3>
+                    <img class="mealtypeimg" src="assets/dish.png" alt="cooking" width="100" height="100">
+            </button>
+            <button class="btn btn-light btn-lg text-center mealType" id="DessertButton1">
+                    <h3 class="card-title mealTypeText">Dessert</h3>
+                    <img class="mealtypeimg" src="assets/dessert.png" alt="dessert" width="100" height="100">
+            </button>
         </div>
+    </div>
 
-        <div class="jumbotron" id="MealTypePage2">
-                <h2 class="display-4 text-center text-white" id="headingPage3">Would you like..</h2><br><br>
-                <div class="col d-flex justify-content-center" id="divPage3">
-                    <button class="btn btn-light btn-lg text-center" id="BreakfastButton2">
-                        <div class="card-body">
-                            <br><h3 class="card-title">Breakfast</h3>
-                            <img id="cookimgPage2" src="assets/breakfast.png" alt="breakfast" width="100" height="100"><br><br> 
-                        </div>
-                    </button>
-                    <button class="btn btn-light btn-lg text-center" id="DinnerButton2">
-                        <div class="card-body">
-                            <br><h3 class="card-title">Lunch/Dinner</h3>
-                            <img id="dishimgPage2" src="assets/dish.png" alt="cooking" width="100" height="100"><br><br>
-                        </div>
-                    </button>
-                    <button class="btn btn-light btn-lg text-center" id="DessertButton2">
-                        <div class="card-body">
-                            <br><h3 class="card-title">Dessert</h3>
-                            <img id="dishimgPage2" src="assets/dessert.png" alt="dessert" width="100" height="100"><br><br>
-                        </div>
-                    </button>
-                </div>
-            </div>
+    <div class="jumbotron" id="MealTypePage2">
+        <h2 class="display-4 text-center text-white" id="headingPage3">Would you like..</h2>
+        <div class="col d-flex justify-content-center" id="divMTP2">
+            <button class="btn btn-light btn-lg text-center mealType" id="BreakfastButton2">
+                    <h3 class="card-title mealTypeText">Breakfast</h3>
+                    <img class="mealtypeimg" id="cookimgPage2" src="assets/breakfast.png" alt="breakfast" width="100" height="100">
+            </button>
+            <button class="btn btn-light btn-lg text-center mealType" id="DinnerButton2">
+                    <h3 class="card-title mealTypeText">Dinner</h3>
+                    <img class="mealtypeimg" src="assets/dish.png" alt="cooking" width="100" height="100">
+            </button>
+            <button class="btn btn-light btn-lg text-center mealType" id="DessertButton2">
+                    <h3 class="card-title mealTypeText">Dessert</h3>
+                    <img class="mealtypeimg" src="assets/dessert.png" alt="dessert" width="100" height="100">
+            </button>
+        </div>
+    </div>
 
 
 
     <div class="jumbotron" id="CuisinePage1">
-            <h1 class="display-4 text-center text-white">Cuisine Type</h1><br>
-        <div class="col d-flex justify-content-center">
+            <h1 class="display-4 text-center text-white">Cuisine Type</h1>
+        <div class="col d-flex justify-content-center cuisineDiv">
             <button type="button" id="AmericanButton1" class="btn btn-light text-black cuisineclass">American</button>
-            <br>
+            
             <button type="button" id="ChineseButton1" class="btn btn-light text-black cuisineclass">Chinese</button>
-            <br>
+            
             <button type="button" id="MexicanButton1" class="btn btn-light text-black cuisineclass">Mexican</button>
         </div>
         <div class="col d-flex justify-content-center">
             <button type="button" id="ItalianButton1" class="btn btn-light text-black cuisineclass">Italian</button>
-            <br>
+            
             <button type="button" id="IndianButton1" class="btn btn-light text-black cuisineclass">Indian</button>
-            <br>
-            <button type="button" id="MediterraneanButton1" class="btn btn-light text-black cuisineclass">Mediterranean</button>
+            
+            <button type="button" id="VeganButton1" class="btn btn-light text-black cuisineclass">Vegan</button>
         </div>
     </div>
 
         <div class="jumbotron" id="CuisinePage2">
-            <h1 class="display-4 text-center text-white">Cuisine Type</h1><br>
-            <div class="col d-flex justify-content-center">
+            <h1 class="display-4 text-center text-white">Cuisine Type</h1>
+            <div class="col d-flex justify-content-center cuisineDiv">
                 <button type="button" id="AmericanButton2" class="btn btn-light text-black cuisineclass">American</button>
-                <br>
+                
                 <button type="button" id="ChineseButton2" class="btn btn-light text-black cuisineclass">Chinese</button>
-                <br>
+            
                 <button type="button" id="MexicanButton2" class="btn btn-light text-black cuisineclass">Mexican</button>
             </div>
             <div class="col d-flex justify-content-center">
                 <button type="button" id="ItalianButton2" class="btn btn-light text-black cuisineclass">Italian</button>
-                <br>
+                
                 <button type="button" id="IndianButton2" class="btn btn-light text-black cuisineclass">Indian</button>
-                <br>
-                <button type="button" id="MediterraneanButton2" class="btn btn-light text-black cuisineclass">Mediterranean</button>
+                
+                <button type="button" id="VeganButton2" class="btn btn-light text-black cuisineclass">Vegan</button>
             </div>              
         </div>
 
     <div class="jumbotron" id="TimePage">
-        <h2 class="display-4 text-center text-white" id="headingPage4">Prep time </h2><br><br><br>
-        <div class="col d-flex justify-content-center" id="divPage4">
+        <h2 class="display-4 text-center text-white" id="headingPage4">Prep time</h2>
+        <div id="divPage4">
             <button class="btn btn-light btn-lg text-center timeclass" id="U30Button">
-                <div class="card-body">
-                    <h3 class="card-title">under 30</h3>
-                    <h3>minutes</h3>
-                </div>
+                    <h3 class="timeText">under 30</h3>
+                    <h3 class="timeText">minutes</h3>
             </button>
             <button class="btn btn-light btn-lg text-center timeclass" id="U60Button">
-                <div class="card-body">
-                    <h3 class="card-title">under 60</h3>
-                    <h3>minutes</h3>  
-                </div>
+                    <h3 class="timeText">under 60</h3>
+                    <h3 class="timeText">minutes</h3>  
             </button>
             <button class="btn btn-light btn-lg text-center timeclass" id="U90Button">
-                <div class="card-body">
-                    <h3 class="card-title">under 90</h3>
-                    <h3>minutes</h3>
-                </div>
+                    <h3 class="timeText">under 90</h3>
+                    <h3 class="timeText">minutes</h3>
             </button>
             <button class="btn btn-light btn-lg text-center timeclass" id="noLimitButton">
-                <div class="card-body">
-                    <h3 class="card-title">No time limit</h3> 
-                </div>
+                 <h3 class="timeText">No time</h3>
+                 <h3 class="timeText" id="limit">limit</h3> 
             </button>
         </div>
     </div>
@@ -160,7 +137,7 @@
         <form>
             <div class="col d-flex justify-content-center" id="zipDiv">
                 <div class="form-group">
-                    <label for="zipCode" class="display-4 text-white">Enter Zip Code</label>
+                    <label for="zipCode" class="display-4 text-white zipText">Enter Zip Code</label>
                     <input type="text" class="form-control" id="zipCode">
                     <p class="col d-flex justify-content-center" id="zipValidate"></p>
                 </div>
@@ -172,7 +149,7 @@
     </div>
 
     <div class="jumbotron" id="resultsPage">
-        <p class="display-4 text-center text-white" id="counterResults"></p>
+        <h2 class="display-4 text-center text-white" id="resultsHeading">Results</h2>
         <table class="table table-striped table-hover" id="resultsTable">
             <thead>
                 <tr>
@@ -183,6 +160,7 @@
             </thead>
             <tbody id="recipeEntry"></tbody>
         </table>
+        <p class="display-4 text-center text-white" id="counterResults"></p>
     </div>
 
     <div class="jumbotron" id="MapPage">
